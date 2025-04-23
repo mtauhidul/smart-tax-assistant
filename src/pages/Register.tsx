@@ -104,11 +104,12 @@ export default function Register() {
             </CardDescription>
           </CardHeader>
           <CardContent className="grid gap-4">
-            <div className="grid grid-cols-2 gap-6">
+            <div className="flex items-center justify-center">
               <Button
                 variant="outline"
                 onClick={handleGoogleRegistration}
                 disabled={isLoading}
+                className="w-full max-w-xs"
               >
                 <svg className="mr-2 h-4 w-4" viewBox="0 0 48 48">
                   {/* Google Icon SVG */}
@@ -130,20 +131,6 @@ export default function Register() {
                   />
                 </svg>
                 Google
-              </Button>
-              <Button variant="outline" disabled={isLoading}>
-                <svg
-                  className="mr-2 h-4 w-4"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  {/* Microsoft Icon SVG */}
-                  <path d="M0 0h11.5v11.5H0V0Z" />
-                  <path d="M12.5 0H24v11.5H12.5V0Z" />
-                  <path d="M0 12.5h11.5V24H0V12.5Z" />
-                  <path d="M12.5 12.5H24V24H12.5V12.5Z" />
-                </svg>
-                Microsoft
               </Button>
             </div>
             <div className="relative">

@@ -14,6 +14,7 @@ import AdminDashboard from "./pages/admin/Dashboard";
 import ChatAssistant from "./pages/ChatAssistant";
 import Dashboard from "./pages/Dashboard";
 import FormReview from "./pages/FormReview";
+import HomePage from "./pages/Home";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import Onboarding from "./pages/Onboarding";
@@ -67,6 +68,8 @@ function App() {
         <Router>
           <Routes>
             {/* Public routes */}
+            <Route path="/" element={<HomePage />} />
+            <Route path="/not-found" element={<NotFound />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
 
