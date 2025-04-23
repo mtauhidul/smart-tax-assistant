@@ -1,6 +1,6 @@
 import { collection, getDocs } from "firebase/firestore";
 import { Download, Search } from "lucide-react";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "../../components/ui/button";
 import {
   Card,

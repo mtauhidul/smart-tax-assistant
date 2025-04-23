@@ -205,7 +205,7 @@ const AdminSettings: React.FC = () => {
 
   // Handle settings changes
   const handleSettingChange = (
-    section: string,
+    _section: string,
     field: string,
     value: SettingValue
   ) => {
